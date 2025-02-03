@@ -1,0 +1,82 @@
+# Django Project
+
+Este es un proyecto de Django que utiliza Docker y Docker Compose para la configuración del entorno de desarrollo.
+
+## Requisitos
+
+- Docker
+- Docker Compose
+- Python 3.x
+- Virtualenv
+
+## Instalación
+
+1. Crea y activa un entorno virtual:
+
+    ```sh
+    python3 -m venv env
+    source env/bin/activate
+    ```
+
+2. Instala las dependencias del proyecto:
+
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. Levanta los contenedores de Docker:
+
+    ```sh
+    docker-compose up -d
+    ```
+
+4. Ejecuta las migraciones de la base de datos:
+
+    ```sh
+    python manage.py migrate
+    ```
+
+5. Inicia el servidor de desarrollo de Django:
+
+    ```sh
+    python manage.py runserver
+    ```
+
+## Uso
+
+- Para activar el entorno virtual:
+
+    ```sh
+    source env/bin/activate
+    ```
+
+- Para desactivar el entorno virtual:
+
+    ```sh
+    deactivate
+    ```
+
+- Para levantar los contenedores de Docker:
+
+    ```sh
+    docker-compose up -d
+    ```
+
+- Para detener los contenedores de Docker:
+
+    ```sh
+    docker-compose down
+    ```
+
+- Para aplicar migraciones de la base de datos:
+
+    ```sh
+    python manage.py migrate
+    ```
+
+- Para iniciar el servidor de desarrollo de Django:
+
+    ```sh
+    python manage.py runserver
+    ```
+

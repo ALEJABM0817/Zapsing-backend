@@ -1,0 +1,6 @@
+env/*
+backend/__pycache__/*
+company/__pycache__/*
+documents/__pycache__/*
+company/migrations/*
+documents/migrations/*
